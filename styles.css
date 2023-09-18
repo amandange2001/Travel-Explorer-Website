@@ -1,0 +1,196 @@
+/* default styles */
+body,
+h1,
+h2,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style header */
+header {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Style main content */
+main {
+    padding: 20px;
+}
+
+.hero {
+    text-align: center;
+    background-image: url(/Travel\ Explorer/hero.jpg);
+    width: 100%;
+    height: 360px;
+    background-size: cover;
+    padding: 100px 0;
+    color: black;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ff5722;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #3119e6;
+}
+
+.destination {
+    margin-bottom: 40px;
+    background-color: bisque;
+    border: 2px solid black;
+    margin: 20px;
+
+}
+
+.destination img {
+    max-width: 10%;
+}
+
+.cities {
+    margin: auto;
+    background-color: darkgrey;
+    border: 2px solid blueviolet;
+}
+
+
+/* Style footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Style contact form */
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form label,
+.contact-form textarea,
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: #ff5722;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #e64a19;
+}
+
+
+/* Style Booking form */
+.booking-form {
+    max-width: 500px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.booking-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.booking-form label,
+.booking-form input[type="number"],
+.booking-form select {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#totalCost {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.ticket {
+    max-width: 500px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.login-form {
+    max-width: 500px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.registration-form {
+    max-width: 500px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}

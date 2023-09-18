@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>booking</title>
+</head>
+
+<body>
+    <header>
+        <h1>Explore Our Destinations</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="booking-form">
+            <h2>Booking Details</h2>
+            <form id="bookingForm">
+                <label for="destination">Choose a Destination:</label>
+                <select id="destination" name="destination">
+                    <option value="paris">Paris, France - $1200</option>
+                    <option value="tokyo">Tokyo, Japan - $1000</option>
+                    <option value="new_york">New York, United States - $1600</option>
+                </select>
+
+                <label for="numOfTravelers">Number of Travelers:</label>
+                <input type="number" id="numOfTravelers" name="numOfTravelers" min="1" required>
+
+                <div id="totalCost">
+                </div>
+
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+        <section class="ticket">
+            <h2>Your Booking Ticket</h2>
+            <div id="ticket-details"></div>
+            <button id="generateTicket">Generate Ticket</button>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2023 Travel Explorer</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

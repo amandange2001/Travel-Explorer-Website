@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Registration - Travel Explorer</title>
+</head>
+<body>
+    <header>
+        <h1>Register for Travel Explorer</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="registration-form">
+            <h2>Create an Account</h2>
+            <br>
+            <form id="registerform">
+                <label>Enter New UserName</label> &nbsp; &nbsp;
+                <input type="text" id="uname" placeholder="Enter New Username" required>
+                <br><br>
+                <label>Enter New Password</label> &nbsp; &nbsp; &nbsp;
+                <input type="password" id="password" placeholder="Enter Password" required>
+                <br><br>
+                <input type="submit" value="Register">
+                <input type="reset" value="Reset">
+            </form>
+        
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Travel Explorer</p>
+    </footer>
+    <script>
+        document.getElementById("registerform").addEventListener("submit", function (event) {
+            event.preventDefault();
+            var uname = document.getElementById("uname").value;
+            var password = document.getElementById("password").value;
+            localStorage.setItem("uname", uname);
+            localStorage.setItem("password", password);
+            window.location.href = "login.html"
+        })
+    </script>
+</body>
+</html>

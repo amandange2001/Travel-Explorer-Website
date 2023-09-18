@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Login - Travel Explorer</title>
+</head>
+<body>
+    <header>
+        <h1>Login to Travel Explorer</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="login-form">
+            <h2>Login</h2>
+            <br>
+            <form id="loginform">
+                <label>Enter UserName</label> &nbsp; &nbsp;
+                <input type="text" id="loginuname" placeholder="Enter Username" required>
+                <br><br>
+                <label>Enter Password</label> &nbsp; &nbsp; &nbsp;
+                <input type="password" id="loginpassword" placeholder="Enter Password" required>
+                <br><br>
+                <input type="submit" value="Login">
+                <input type="reset" value="Reset">
+                <br><br>
+                <p>If you don't have account then <a href="registeration.html">Sign Up</a> here.</p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Travel Explorer</p>
+    </footer>
+    <script>
+        document.getElementById("loginform").addEventListener("submit", function (event) {
+            event.preventDefault();
+            var entereduname = document.getElementById("loginuname").value;
+            var enteredpassword = document.getElementById("loginpassword").value;
+
+            var storeduname = localStorage.getItem("uname");
+            var storedpassword = localStorage.getItem("password");
+
+            if (entereduname === storeduname && enteredpassword === storedpassword) {
+                alert("Login Successfully")
+                window.location.href = "destinations.html"
+            }
+            else {
+                alert("login failed")
+            }
+        })
+    </script>
+</body>
+</html>
